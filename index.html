@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC's of CSS</title>
+    <!--css stylesheet link-->
+    <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Interactive ABCs of CSS Technology Learning Wesbite!</h1>
+        <h2>Click the buttons below to reveal and learn the CSS technology features of the corresponding letters</h2>
+    </header>
+    <main>
+        <!--container to hold a div for each image-->
+        <div class="image-container">
+            <div id="imageA" class="image-box">
+                <img src="./assets/img/css-letter-a.png" alt="A is for Aspect-Ratio">
+                <!--each hide button will have the same class name-->
+                <button onClick="hideImage('A')" class="hide-button">Hide Result</button>
+                <button onClick="showImage('A')">A</button>
+            </div>
+            <div id="imageB" class="image-box">
+                <img src="./assets/img/css-letter-b.png" alt="B is for Border">
+                <button onClick="hideImage('B')" class="hide-button">Hide Result</button>
+                <button onClick="showImage('B')">B</button>
+            </div>
+            <div id="imageC" class="image-box">
+                <img src="./assets/img/css-letter-c.png" alt="C is for Colors">
+                <button onClick="hideImage('C')" class="hide-button">Hide Result</button>
+                <button onClick="showImage('C')">C</button>
+            </div>
+        </div>
+
+        <!--division for the A B C buttons
+        none of the A B C buttons were in their respective container so i moved them into each respective division above
+        <div class="button-container">
+            <button onClick="showImage('A')">A</button>
+            <button onClick="showImage('B')">B</button>
+            <button onClick="showImage('C')">C</button>
+        </div>
+    -->
+        <script src="./js/index.js"></script>
+    </main>
+    <footer></footer>
+</body>
+</html>
